@@ -7,24 +7,19 @@
 let initialElevation;
 let currentHeightOfInstrument;
 let shotId = 1;
-let isBacksight = null;
+let isBacksight = false;
 
-function setBacksight(value) {
-    isBacksight = value;
+function toggleBacksight() {
+    isBacksight = !isBacksight;
     updateButtonStyles();
 }
 
 function updateButtonStyles() {
-    document.getElementById('yesButton').style.backgroundColor = isBacksight ? '#4caf50' : '#ccc';
-    document.getElementById('noButton').style.backgroundColor = isBacksight === false ? '#4caf50' : '#ccc';
+    let yesButton = document.getElementById('yesButton');
+    yesButton.style.backgroundColor = isBacksight ? '#4caf50' : '#ccc';
 }
 
 function calculateShot() {
-    if (isBacksight === null) {
-        alert('Please select "Yes" or "No" for backsight.');
-        return;
-    }
-
     // Get user inputs
     let initialElevationInput = document.getElementById('initialElevation').value.trim();
     let description = document.getElementById('description').value.trim();
@@ -51,7 +46,7 @@ function calculateShot() {
 
     // Display the current state
     let output = document.getElementById('output');
-    output.innerHTML += `<p>Shot ${shotId}: ${description}, Elevation: ${elevation}, HI: ${currentHeightOfInstrument}</p>`;
+    output.innerHTML += `<p>Shot ${shotId}: ${description}, Elevation: ${elevation}</p>`;
 
     // Increment shotId
     shotId++;
@@ -59,6 +54,5 @@ function calculateShot() {
     // Clear input fields
     document.getElementById('description').value = "";
     document.getElementById('foresight').value = "";
-    isBacksight = null;
     updateButtonStyles();
 }
