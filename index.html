@@ -1,5 +1,3 @@
-<!-- index.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,8 +14,11 @@
             <label for="initialElevation">Initial Elevation:</label>
             <input type="number" id="initialElevation" required>
 
-            <label for="isBacksight">Is this a backsight?</label>
-            <input type="checkbox" id="isBacksight">
+            <div class="backsight-container">
+                <p>Is this a backsight?</p>
+                <button type="button" id="yesButton" onclick="setBacksight(true)">Yes</button>
+                <button type="button" id="noButton" onclick="setBacksight(false)">No</button>
+            </div>
 
             <label for="description">Description:</label>
             <input type="text" id="description" required>

@@ -2,16 +2,33 @@
  * The back-end logic behind differential leveling.
  * @author Alex Taylor 12/24/23
  */
+// leveling.js
+
 let initialElevation;
 let currentHeightOfInstrument;
 let shotId = 1;
+let isBacksight = null;
+
+function setBacksight(value) {
+    isBacksight = value;
+    updateButtonStyles();
+}
+
+function updateButtonStyles() {
+    document.getElementById('yesButton').style.backgroundColor = isBacksight ? '#4caf50' : '#ccc';
+    document.getElementById('noButton').style.backgroundColor = isBacksight === false ? '#4caf50' : '#ccc';
+}
 
 function calculateShot() {
+    if (isBacksight === null) {
+        alert('Please select "Yes" or "No" for backsight.');
+        return;
+    }
+
     // Get user inputs
-    let initialElevationInput = document.getElementById('initialElevation').value;
-    let isBacksight = document.getElementById('isBacksight').checked;
-    let description = document.getElementById('description').value;
-    let foresightInput = document.getElementById('foresight').value;
+    let initialElevationInput = document.getElementById('initialElevation').value.trim();
+    let description = document.getElementById('description').value.trim();
+    let foresightInput = document.getElementById('foresight').value.trim();
 
     // Parse inputs as floats
     let initialElevation = parseFloat(initialElevationInput);
@@ -25,8 +42,8 @@ function calculateShot() {
 
     // Calculate elevation for the shot
     let elevation;
+    currentHeightOfInstrument = initialElevation + foresight;
     if (isBacksight) {
-        currentHeightOfInstrument = initialElevation + foresight;
         elevation = currentHeightOfInstrument;
     } else {
         elevation = currentHeightOfInstrument - foresight;
@@ -34,7 +51,7 @@ function calculateShot() {
 
     // Display the current state
     let output = document.getElementById('output');
-    output.innerHTML += `<p>Shot ${shotId}: ${description}, Elevation: ${elevation}</p>`;
+    output.innerHTML += `<p>Shot ${shotId}: ${description}, Elevation: ${elevation}, HI: ${currentHeightOfInstrument}</p>`;
 
     // Increment shotId
     shotId++;
@@ -42,5 +59,6 @@ function calculateShot() {
     // Clear input fields
     document.getElementById('description').value = "";
     document.getElementById('foresight').value = "";
-    document.getElementById('isBacksight').checked = false;
+    isBacksight = null;
+    updateButtonStyles();
 }

@@ -37,16 +37,21 @@ button {
 }
 
 button {
-    background-color: #4caf50;
-    color: #fff;
     cursor: pointer;
 }
 
-button:hover {
+button:hover,
+button:focus {
     background-color: #45a049;
 }
 
-#output {
-    margin-top: 20px;
+.backsight-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto auto;
+    align-items: center;
 }
 
+.backsight-container p {
+    margin: 0;
+}
