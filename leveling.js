@@ -68,7 +68,7 @@ function calculateShot() {
     }
 
     // Display the current state
-    output.innerHTML += `<p>Shot ${shotId}: ${descriptionValue}, Initial Elevation: ${initialElevationValue}, HT: ${elevation}, HI: ${currentHeightOfInstrument}</p>`;
+    output.innerHTML += `<p>Shot ${shotId}: "${descriptionValue}" <strong>|</strong> Initial Elevation: ${initialElevationValue} <strong>|</strong> HT: ${elevation} <strong>|</strong> HI: ${currentHeightOfInstrument} \n</p>`;
 
     // Increment shotId
     shotId++;
