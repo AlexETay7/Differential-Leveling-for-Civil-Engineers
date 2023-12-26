@@ -14,10 +14,10 @@
             <label for="initialElevation">Initial Elevation:</label>
             <input type="number" id="initialElevation" required>
 
-            <div class="backsight-container">
-                <p>Is this a backsight? (first shot must be backsight)</p>
-                <button type="button" id="yesButton" onclick="setBacksight(true)">Yes</button>
-                <button type="button" id="noButton" onclick="setBacksight(false)">No</button>
+            <div class="toggle-container">
+                <input type="checkbox" id="toggleSwitch" class="toggle-switch" onclick="toggleBacksight()">
+                <label for="toggleSwitch" class="toggle-label">✓</label>
+                <p>Toggle green for backsight. First shot must be backsight.</p>
             </div>
 
             <label for="description">Description:</label>

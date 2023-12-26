@@ -27,8 +27,8 @@ function isValidNumber(value, fieldName) {
 }
 
 // Set backsight value and update button styles
-function setBacksight(value) {
-    isBacksight = value;
+function toggleBacksight() {
+    isBacksight = !isBacksight; // Toggle the backsight value
     updateButtonStyles();
 }
 

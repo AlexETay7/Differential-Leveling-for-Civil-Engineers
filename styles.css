@@ -45,13 +45,37 @@ button:focus {
     background-color: #45a049;
 }
 
-.backsight-container {
+.toggle-container {
     display: grid;
     gap: 10px;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto 1fr;
     align-items: center;
+    position: relative;
 }
 
-.backsight-container p {
+.toggle-switch {
+    display: none;
+}
+
+.toggle-label {
+    background-color: #ccc;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 20px;
+    width: 50px; /* Adjust the width */
+    position: absolute;
+    right: 0; /* Align to the right */
+    border: 2px solid #000; /* Black border */
+    transition: background-color 0.3s;
+}
+
+.toggle-switch:checked + .toggle-label {
+    background-color: #4caf50;
+}
+
+.toggle-container p {
     margin: 0;
 }
