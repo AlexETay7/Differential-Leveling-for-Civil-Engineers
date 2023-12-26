@@ -57,7 +57,7 @@ function calculateShot() {
     }
 
     // Calculate initial height of the instrument
-    initialHeightOfInstrument = initialElevationValue + shotValue; 
+    initialHeightOfInstrument = (initialElevationValue + shotValue).toFixed(3); 
 
     // Calculate height of target
     let HeightOfTarget;
@@ -68,10 +68,10 @@ function calculateShot() {
             previousHeightOfTarget = currentHeightOfInstrument - shotValue;
         } else {
             HeightOfTarget = previousHeightOfTarget; // Use the previous HT for backsights
-            currentHeightOfInstrument = HeightOfTarget + shotValue;
+            currentHeightOfInstrument = (HeightOfTarget + shotValue).toFixed(3);
         }
     } else {
-        HeightOfTarget = currentHeightOfInstrument - shotValue;
+        HeightOfTarget = (currentHeightOfInstrument - shotValue).toFixed(3);
         // Update the previousHeightOfTarget for future backsights
         previousHeightOfTarget = HeightOfTarget;
     }
