@@ -58,17 +58,17 @@ function calculateShot() {
     // Calculate initial height of the instrument
     initialHeightOfInstrument = initialElevationValue + foresightValue;
 
-    // Calculate elevation for the shot
-    let elevation;
+    // Calculate height of target
+    let HeightOfTarget;
     if (isBacksight) {
         currentHeightOfInstrument = initialHeightOfInstrument;
-        elevation = currentHeightOfInstrument;
+        //HeightOfTarget = currentHeightOfInstrument;
     } else {
-        elevation = currentHeightOfInstrument - foresightValue;
+        HeightOfTarget = currentHeightOfInstrument - foresightValue;
     }
 
     // Display the current state
-    output.innerHTML += `<p>Shot ${shotId}: "${descriptionValue}" <strong>|</strong> Initial Elevation: ${initialElevationValue} <strong>|</strong> HT: ${elevation} <strong>|</strong> HI: ${currentHeightOfInstrument} \n</p>`;
+    output.innerHTML += `<p>Shot ${shotId}: "${descriptionValue}" <strong>|</strong> Initial Elevation: ${initialElevationValue} <strong>|</strong> HT: ${HeightOfTarget} <strong>|</strong> HI: ${currentHeightOfInstrument} \n</p>`;
 
     // Increment shotId
     shotId++;
