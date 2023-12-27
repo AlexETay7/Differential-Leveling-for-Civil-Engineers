@@ -1,11 +1,10 @@
----
-
-- Project Differential Leveling
-- Personal Project
-- 12/23/2023
-- Alex Taylor
-
----
+# Differential Leveling
+****************
+* Project Differential Leveling
+* Personal Project
+* Date 12/23/2023
+* Alex Taylor
+**************** 
 
 ### **_OVERVIEW:_**
 
