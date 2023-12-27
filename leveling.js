@@ -88,3 +88,5 @@ function calculateShot() {
     isBacksight = null;
     updateButtonStyles();
 }
+
+
