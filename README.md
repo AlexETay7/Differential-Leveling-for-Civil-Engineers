@@ -25,39 +25,39 @@ Currently, this app is not live on the internet yet. So, to run it you must do s
 
 The program captures user inputs related to initial elevation, backsights or foresights, descriptions, and measured values. It then calculates and displays the height of the target (HT) and the height of the instrument (HI) for each shot. 
 
-##### 1. User Inputs
+#### 1. User Inputs
 
 - **Initial Elevation:** The starting point elevation.
 - **Backsight/Foresight:** Users toggle between backsight and foresight using a checkbox.
 - **Description:** A brief description of the shot.
 - **Measured Value (Foresight):** The height or distance measured from the initial point.
 
-##### 2. Backsight/Foresight Toggle
+#### 2. Backsight/Foresight Toggle
 
 - The program uses a toggle button to switch between backsight and foresight. This toggle influences the calculation of the height of the target.
 
-##### 3. Calculation Logic
+#### 3. Calculation Logic
 
 - The program calculates the initial height of the instrument based on the initial elevation and shot value.
 - For backsights, it maintains a record of the previous height of the target to calculate subsequent heights.
 
-##### 4. Output Display
+#### 4. Output Display
 
 - The calculated results, including shot number, description, initial elevation, height of the target, and height of the instrument, are displayed in a results section.
 
-##### 5. Validation
+#### 5. Validation
 
 - The program includes numeric input validation to ensure that users enter valid numerical values.
 
-##### 6. Styling and UI
+#### 6. Styling and UI
 
 - The program has a clean and user-friendly interface with styling to enhance the user experience.
 
-##### 7. Results Display
+#### 7. Results Display
 
 - The results of each shot are appended to the results section, providing a record of the leveling process.
 
-##### 8. Separate Results Container
+#### 8. Separate Results Container
 
 - The results are displayed in a separate container, making it distinct from the input form.
 ### **_TESTING:_**
