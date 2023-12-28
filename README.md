@@ -1,10 +1,13 @@
 # Differential Leveling for Surveyors
-****************
-* Project Differential Leveling
-* Personal Project
-* Date 12/23/2023
-* Alex Taylor
-**************** 
+
+---
+
+- Project Differential Leveling
+- Personal Project
+- Date 12/23/2023
+- Alex Taylor
+
+---
 
 ### **_OVERVIEW:_**
 
@@ -23,7 +26,7 @@ Currently, this app is not live on the internet yet. So, to run it you must do s
 
 ### **_PROGRAM DESIGN AND IMPORTANT CONCEPTS:_**
 
-The program captures user inputs related to initial elevation, backsights or foresights, descriptions, and measured values. It then calculates and displays the height of the target (HT) and the height of the instrument (HI) for each shot. 
+The program captures user inputs related to initial elevation, backsights or foresights, descriptions, and measured values. It then calculates and displays the height of the target (HT) and the height of the instrument (HI) for each shot.
 
 #### 1. User Inputs
 
@@ -43,7 +46,7 @@ The program captures user inputs related to initial elevation, backsights or for
 
 #### 4. Output Display
 
-- The calculated results, including shot number, description, initial elevation, height of the target, and height of the instrument, are displayed in a results section.
+- The calculated results, including shot number, description, initial elevation, height of the target, and height of the instrument, are displayed below the leveling tool.
 
 #### 5. Validation
 
@@ -55,17 +58,12 @@ The program captures user inputs related to initial elevation, backsights or for
 
 #### 7. Results Display
 
-- The results of each shot are appended to the results section, providing a record of the leveling process.
+- The results of each shot are appended below the leveling tool section, providing a record of the leveling process.
 
-#### 8. Separate Results Container
-
-- The results are displayed in a separate container, making it distinct from the input form.
 ### **_TESTING:_**
 
 No test class was made for this project.
 
 ### **_DISCUSSION:_**
-
-
 
 More to come in the future, the project is not finished.
