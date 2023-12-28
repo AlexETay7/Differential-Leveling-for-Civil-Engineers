@@ -8,7 +8,7 @@
 
 ### **_OVERVIEW:_**
 
-Differential leveling is a surveying technique used to determine the difference in elevation between two points. This repository contains the front and back-end logic for a simple web-based tool designed for civil engineers to perform differential leveling calculations.
+Differential leveling is a surveying technique used to determine the difference in elevation between two points. This repository contains the front and back-end logic for a simple web-based tool designed for civil engineers to perform differential leveling calculations. My dad is a civil engineer and hearing about this concept inspired me to design this tool to make the calculations easier.
 
 ### **_INCLUDED FILES:_**
 
