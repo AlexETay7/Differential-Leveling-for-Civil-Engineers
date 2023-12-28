@@ -62,8 +62,10 @@ The program captures user inputs related to initial elevation, backsights or for
 - The results are displayed in a separate container, making it distinct from the input form.
 ### **_TESTING:_**
 
+No test class was made for this project.
+
 ### **_DISCUSSION:_**
 
----
+
 
 More to come in the future, the project is not finished.
