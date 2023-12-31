@@ -18,7 +18,12 @@ let previousHeightOfTarget = null; // Variable to store previous HT
 let shotId = 1; 
 let isBacksight = null;
 
-// Validation function for numeric inputs
+/**
+ * Validation function for numeric inputs
+ * @param {*} value - user input
+ * @param {*} fieldName - field being checked for input
+ * @returns false for NaN, true for numeric value
+ */
 function isValidNumber(value, fieldName) {
     if (isNaN(value)) {
         alert(`Please enter a valid number for ${fieldName}.`);
@@ -27,19 +32,25 @@ function isValidNumber(value, fieldName) {
     return true;
 }
 
-// Set backsight value and update button styles
+/**
+ * Sets backsight value and updates button styles
+ */
 function toggleBacksight() {
     isBacksight = !isBacksight; // Toggle the backsight value
     updateButtonStyles();
 }
 
-// Update button styles based on backsight value
+/**
+ * Updates button styles based on backsight value
+ */
 function updateButtonStyles() {
     document.getElementById('yesButton').style.backgroundColor = isBacksight ? '#4caf50' : '#ccc';
     document.getElementById('noButton').style.backgroundColor = isBacksight === false ? '#4caf50' : '#ccc';
 }
 
-// Calculate shot based on user inputs
+/**
+ * Calculates shot based on user inputs and updates HTML accordingly
+ */
 function calculateShot() {
     // Validate backsight selection
     if (isBacksight === null) {
