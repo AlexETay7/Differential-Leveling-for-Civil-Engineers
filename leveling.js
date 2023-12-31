@@ -1,5 +1,6 @@
 /**
- * Differential Leveling back-end logic.
+ * A file where the back-end logic is done to implement
+ * the differential-leveling tool.
  * @author Alex Taylor
  */
 
