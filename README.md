@@ -66,4 +66,4 @@ No test class was made for this project.
 
 ### **_DISCUSSION:_**
 
-More to come in the future, the project is not finished.
+The tool currently has all functionality, however, I would like to improve how shots are displayed each time they are calculated.
