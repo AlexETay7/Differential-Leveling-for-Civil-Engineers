@@ -1,6 +1,6 @@
 /**
  * Differential Leveling back-end logic.
- * @author Alex Taylor 12/24/23
+ * @author Alex Taylor
  */
 
 // Cache frequently accessed DOM elements
