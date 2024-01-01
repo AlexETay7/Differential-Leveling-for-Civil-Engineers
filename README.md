@@ -26,7 +26,7 @@ Currently, this app is not live on the internet yet. So, to run it you must do s
 
 ### **_PROGRAM DESIGN AND IMPORTANT CONCEPTS:_**
 
-The program captures user inputs related to initial elevation, backsights or foresights, descriptions, and measured values. It then calculates and displays the height of the target (HT) and the height of the instrument (HI) for each shot. Note that the first heigh of target value (HT) should be undefined.
+The program captures user inputs related to initial elevation, backsights or foresights, descriptions, and measured values. It then calculates and displays the height of the target (HT) and the height of the instrument (HI) for each shot. Note that the first height of target value (HT) should be undefined.
 
 #### 1. User Inputs
 
@@ -66,4 +66,4 @@ No test class was made for this project.
 
 ### **_DISCUSSION:_**
 
-The tool currently has all functionality, however, I would like to improve how shots are displayed each time they are calculated.
+The tool currently has all the functionality, however, I would like to improve how shots are displayed each time they are calculated.
