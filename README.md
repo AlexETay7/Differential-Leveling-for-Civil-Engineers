@@ -28,6 +28,8 @@ Currently, this app is not live on the internet yet. So, to run it you must do s
 
 The program captures user inputs related to initial elevation, backsights or foresights, descriptions, and measured values. It then calculates and displays the height of the target (HT) and the height of the instrument (HI) for each shot. Note that the first height of target value (HT) should be undefined.
 
+If your are using this repository and are not a surveyor, or do not understand the concept of differential leveling, I recommend reading about it at this wikipedia page: https://en.wikipedia.org/wiki/Levelling
+
 #### 1. User Inputs
 
 - **Initial Elevation:** The starting point elevation.
