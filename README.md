@@ -22,11 +22,11 @@ Differential leveling is a surveying technique used to determine the difference 
 
 ### **_COMPILING AND RUNNING:_**
 
-Currently, this app is not live on the internet yet. So, to run it you must do so locally by cloning the repository onto your computer and running the code on an HTML live server. I will make it easier to access in the future when it is finished.
+Currently, this app is not live on the internet yet. So, to run it you must do so locally by cloning the repository onto your computer and running the code on an HTML live server(or any other method that allows you to run it locally). I will make it easier to access in the future when it is finished.
 
 ### **_PROGRAM DESIGN AND IMPORTANT CONCEPTS:_**
 
-The program captures user inputs related to initial elevation, backsights or foresights, descriptions, and measured values. It then calculates and displays the height of the target (HT) and the height of the instrument (HI) for each shot. Note that the first height of target value (HT) should be undefined.
+The program captures user inputs related to initial elevation, backsights or foresights, descriptions, and measured values. It then calculates and displays the height of the target (HT) and the height of the instrument (HI) for each shot. Note that the first height of the target value (HT) should be undefined.
 
 If your are using this repository and are not a surveyor, or do not understand the concept of differential leveling, I recommend reading about it at this wikipedia page: https://en.wikipedia.org/wiki/Levelling
 
