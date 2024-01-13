@@ -36,13 +36,21 @@ button {
     border-radius: 4px;
 }
 
+
 button {
+    padding: 10px;
+    border: none; 
+    border-radius: 25px; 
+    background-color: #4caf50; 
+    color: #fff; 
+    font-size: 16px; 
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 button:hover,
 button:focus {
-    background-color: #45a049;
+    background-color: #45a049; 
 }
 
 .toggle-container {
