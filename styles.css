@@ -109,7 +109,7 @@ button:focus {
 }
 
 .toggle-switch:checked + .toggle-label {
-    background-color: #4caf50;
+    background-color: #168fec;
 }
 
 .toggle-container p {
