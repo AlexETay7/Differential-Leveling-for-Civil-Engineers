@@ -18,7 +18,7 @@ Differential leveling is a surveying technique used to determine the difference 
 - leveling.js - mostly back-end logic but some front-end logic for doing calculations
 - index.html - HTML front-end code
 - styles.css - styles for HTML
-- README - this file
+- README - program overview
 
 ### **_COMPILING AND RUNNING:_**
 
